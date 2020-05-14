@@ -14,6 +14,9 @@ bot.onText(/\/start/, (msg) => {
     });
     });
 
+
+    
+
         bot.onText(/\/sendpic/, (msg) => {
 
             bot.sendPhoto(msg.chat.id,"https://cms-assets.tutsplus.com/uploads/users/30/posts/21015/preview_image/picture-tag.png",{caption : "Here we go ! \nThis is just a caption "}  );
