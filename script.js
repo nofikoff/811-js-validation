@@ -1,6 +1,8 @@
 const TelegramBot = require('node-telegram-bot-api');
 
-const token = '1133832355:AAHB5RDkk3SLO8Jc3CcNbtJvTKdpJ1QDNKU';
+//hello test 
+
+const token = '';
 
 const bot = new TelegramBot(token, {polling: true});
 
@@ -11,6 +13,9 @@ bot.onText(/\/start/, (msg) => {
         "keyboard": [["Hi", "Bye"],   ["Keyboard"], ["I'm robot", "Location"]]}
     });
     });
+
+
+    
 
         bot.onText(/\/sendpic/, (msg) => {
 
