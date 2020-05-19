@@ -41,8 +41,8 @@ if (typeof bioForm !== 'undefined') {
         setCookie("email", '', 1)
         setCookie("password", '', 1)
 
-        eraseCookie("email");
-        eraseCookie("password");
+        // eraseCookie("email");
+        // eraseCookie("password");
         // на регистрацию
         window.location.href = "./index.html";
     })
