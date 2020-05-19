@@ -3,9 +3,6 @@
 if (typeof regForm !== 'undefined') {
     console.log("Форма регистрации")
 
-
-
-
     // если вход
     myEnter.addEventListener("click", (e) => {
         console.log("Выход");
@@ -39,7 +36,11 @@ if (typeof bioForm !== 'undefined') {
     // если выход - все чистим
     myExit.addEventListener("click", (e) => {
         console.log("Выход");
+
         //e.preventDefault();
+        setCookie("email", '', 1)
+        setCookie("password", '', 1)
+
         eraseCookie("email");
         eraseCookie("password");
         // на регистрацию
