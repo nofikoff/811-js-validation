@@ -23,8 +23,8 @@ if (typeof bioForm !== 'undefined') {
 
     // если выход - все чистим
     myExit.addEventListener("click", (e) => {
-
-        e.preventDefault();
+        console.log("Выход");
+        //e.preventDefault();
 
         eraseCookie("email");
         eraseCookie("password");
