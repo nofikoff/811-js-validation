@@ -1,13 +1,28 @@
+
+
 if (typeof regForm !== 'undefined') {
     console.log("Форма регистрации")
+
+
+
+
+    // если вход
+    myEnter.addEventListener("click", (e) => {
+        console.log("Выход");
+        //e.preventDefault();
+        setCookie("email", "ruslan.novikov@gmail.com", 1)
+        setCookie("password", md5("1234"), 1)
+        // на личный кабинет
+        window.location.href = "./bio.html";
+    })
+
 
     // если авторизован - bio.html
     if (getCookie("email") !== null) {
         window.location.href = "./bio.html";
     }
 
-    setCookie("email", "ruslan.novikov@gmail.com", 1)
-    setCookie("password", md5("1234"), 1)
+
 
 }
 
@@ -25,13 +40,10 @@ if (typeof bioForm !== 'undefined') {
     myExit.addEventListener("click", (e) => {
         console.log("Выход");
         //e.preventDefault();
-
         eraseCookie("email");
         eraseCookie("password");
-
-
         // на регистрацию
-        //window.location.href = "./index.html";
+        window.location.href = "./index.html";
     })
 
 }
