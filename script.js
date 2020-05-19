@@ -31,7 +31,7 @@ if (typeof bioForm !== 'undefined') {
 
 
         // на регистрацию
-        window.location.href = "./index.html";
+        //window.location.href = "./index.html";
     })
 
 }
@@ -59,5 +59,5 @@ function getCookie(name) {
 }
 
 function eraseCookie(name) {
-    setCookie(name, '', -100)
+    setCookie(name, '', -1)
 }
