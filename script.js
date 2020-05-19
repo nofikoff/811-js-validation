@@ -22,10 +22,11 @@ if (typeof bioForm !== 'undefined') {
 
 
     // если выход - все чистим
-    myExit.addEventListener("click", () => {
+    myExit.addEventListener("click", (Event) => {
         eraseCookie("email");
         eraseCookie("password");
 
+        Event.preventDefault();
         // на регистрацию
         window.location.href = "./index.html";
     })
